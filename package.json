@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-product-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite serve src",
+    "build": "tailwindcss build -i src/input.css -o src/css/style.css -w",
+    "prod": "NODE_ENV=production npx tailwindcss build -i src/style.css -o src/output.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "AKC",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.24",
+    "postcss": "^8.4.6"
+  },
+  "devDependencies": {  
+    "vite": "^2.4.4",
+    "autoprefixer": "^10.3.7",
+    "vite-plugin-require": "1.2.14"
+  }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Kumbh+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss/base";
+@layer base {
+  html {
+    @apply font-kumbh;
+  }
+}
+@import "tailwindcss/components";
+@layer components {
+	.nav-info {
+		@apply pb-[42px] very-dark-blue lg:text-dark-grayish-blue lg:hover:border-b-4 lg:hover:border-orange lg:hover:very-dark-blue lg:hover:-mb-1 transition duration-300 lg:ml-6;
+	}
+
+	.plus-minus {
+		@apply p-2 px-5 ml-2 mr-2 flex items-center cursor-pointer hover:brightness-150 transition;
+	}
+
+	.hide {
+		@apply scale-0 opacity-0;
+	}
+
+	.cart-active {
+		@apply fill-very-dark-blue;
+	}
+
+	.ring-active {
+		@apply ring ring-orange focus:ring hover:ring;
+	}
+
+	.active {
+		@apply opacity-30 ring ring-orange;
+	}
+}
+
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
